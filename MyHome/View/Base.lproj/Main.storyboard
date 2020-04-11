@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jc8-iD-aMU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp6-3Y-O8l">
-                                <rect key="frame" x="60" y="621" width="286" height="48"/>
+                                <rect key="frame" x="60" y="628" width="286" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="BlD-IB-Uiw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="286" id="LKg-ug-enu"/>
@@ -30,7 +30,7 @@
                                     <segue destination="aFh-bk-Eog" kind="show" id="qZq-Dl-spV"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home1" translatesAutoresizingMaskIntoConstraints="NO" id="PES-zg-dda">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home1" translatesAutoresizingMaskIntoConstraints="NO" id="PES-zg-dda">
                                 <rect key="frame" x="143" y="147" width="128" height="128"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qT-Nr-5zV" userLabel="EmailView">
@@ -102,10 +102,10 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kp6-3Y-O8l" secondAttribute="trailing" constant="68" id="8Wg-zj-ak9"/>
                             <constraint firstItem="8qT-Nr-5zV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BAU-oO-ZR5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kp6-3Y-O8l" secondAttribute="bottom" constant="186" id="N3k-mI-9yy"/>
                             <constraint firstItem="uZ0-WI-68j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WWt-vk-MUE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PES-zg-dda" secondAttribute="bottom" constant="587" id="YQH-gd-RTS"/>
                             <constraint firstItem="uZ0-WI-68j" firstAttribute="top" secondItem="8qT-Nr-5zV" secondAttribute="bottom" constant="-75" id="ZhK-js-dre"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kp6-3Y-O8l" secondAttribute="bottom" constant="193" id="aOz-rO-qWn"/>
                             <constraint firstItem="PES-zg-dda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="dtl-yw-P5l"/>
                             <constraint firstItem="8qT-Nr-5zV" firstAttribute="top" secondItem="PES-zg-dda" secondAttribute="bottom" constant="54" id="flA-9f-xwt"/>
                             <constraint firstItem="uZ0-WI-68j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hWG-nA-XF9"/>
@@ -129,16 +129,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="eO5-Pi-cqo">
-                                <rect key="frame" x="59" y="175" width="296" height="600"/>
+                                <rect key="frame" x="75.5" y="175" width="263" height="600"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="otR-al-gsr" userLabel="Top Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="296" height="250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="250"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home.png" translatesAutoresizingMaskIntoConstraints="NO" id="jIk-vr-Gzp">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="250"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jIk-vr-Gzp">
+                                                <rect key="frame" x="0.0" y="1.5" width="111.5" height="247.5"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cza-iq-AJZ">
-                                                <rect key="frame" x="168" y="0.0" width="128" height="250"/>
+                                                <rect key="frame" x="151.5" y="0.0" width="111.5" height="250"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -146,10 +146,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="J4Z-St-Qdi" userLabel="Button Stack View">
-                                        <rect key="frame" x="0.0" y="350" width="296" height="250"/>
+                                        <rect key="frame" x="0.0" y="350" width="263" height="250"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-0Z-8Tn">
-                                                <rect key="frame" x="0.0" y="0.0" width="296" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="30"/>
                                                 <state key="normal" title="Schedule Guest arrival">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -158,14 +158,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-I8-j57">
-                                                <rect key="frame" x="0.0" y="110" width="296" height="30"/>
+                                                <rect key="frame" x="0.0" y="110" width="263" height="30"/>
                                                 <state key="normal" title="Get Help"/>
                                                 <connections>
                                                     <segue destination="ol6-kn-a5y" kind="show" id="zm1-XO-ssT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXS-Yi-nzh">
-                                                <rect key="frame" x="0.0" y="220" width="296" height="30"/>
+                                                <rect key="frame" x="0.0" y="220" width="263" height="30"/>
                                                 <state key="normal" title="Pay Bills"/>
                                                 <connections>
                                                     <segue destination="zFa-PV-GTg" kind="show" id="nJh-5N-U3A"/>
@@ -458,8 +458,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home.png" width="128" height="128"/>
-        <image name="home1" width="128" height="128"/>
+        <image name="Home1" width="128" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="textfield" width="298" height="93"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
