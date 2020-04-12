@@ -20,5 +20,13 @@ class CustomAlert{
         
     }
     
+    static func createAlertSheet(title:String,descr:String)-> UIAlertController{
+        
+        var alert = UIAlertController(title: title, message: descr, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        return alert
+        
+    }
+    
     
 }

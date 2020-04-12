@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScheduleGuestArrivalViewController: UIViewController {
+class ScheduleGuestArrivalViewController: UIViewController{
     @IBOutlet weak var guestNameOutlet: UITextField!
     @IBOutlet weak var phoneNumberOutlet: UITextField!
     @IBOutlet weak var stepperCountLabel: UILabel!
@@ -17,6 +17,9 @@ class ScheduleGuestArrivalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        datePickerOutlet.minimumDate = Date()
+        
+//        print(Date())
         // Do any additional setup after loading the view.
     }
     
@@ -25,8 +28,27 @@ class ScheduleGuestArrivalViewController: UIViewController {
         stepperCountLabel.text = String(Int(sender.value))
     }
     @IBAction func scheduleAction(_ sender: UIButton) {
+        
+        
+        
+        
+        
+        
+        
+        
+        let guestDetails = GuestDetails().addGuest(name: guestNameOutlet.text!, phoneNumber: phoneNumberOutlet.text!, expectedTime: "nil", numberOfGuests: stepperCountLabel.text!)
+        
+        let date = datePickerOutlet.calendar.dateComponents([.hour, .minute, .month,.day,.year], from: datePickerOutlet.date)
+
+        self.present(CustomAlert.createAlert(title: "Registered!", descr: """
+            
+            Your guest \(guestNameOutlet.text!) is expected to arrive on \(date.day!)-\(date.month!)-\(date.year!)  \(date.hour!):\(date.minute!) .
+            Total number of guests are \(stepperCountLabel.text!)
+            
+            """), animated: true, completion: nil)
+        
     }
-    
+ 
     /*
     // MARK: - Navigation
 

@@ -21,6 +21,7 @@
 		2D49BC352441D91800AE736F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D49BC342441D91800AE736F /* GoogleService-Info.plist */; };
 		2D49BC372441E0A300AE736F /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D49BC362441E0A300AE736F /* CustomAlert.swift */; };
 		2D49BC392441E5BF00AE736F /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D49BC382441E5BF00AE736F /* HomeNavigationController.swift */; };
+		2D7CE2152442302300E5C645 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CE2142442302300E5C645 /* Guest.swift */; };
 		50B398CDD38E738BE7CF5A2A /* Pods_MyHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785D83BB0D5D5E04A2FECA0A /* Pods_MyHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		2D49BC342441D91800AE736F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D49BC362441E0A300AE736F /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		2D49BC382441E5BF00AE736F /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeNavigationController.swift; path = MyHome/View/HomeNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		2D7CE2142442302300E5C645 /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
 		785D83BB0D5D5E04A2FECA0A /* Pods_MyHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF1AE0C83F2E3CA261FA660 /* Pods-MyHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHome.debug.xcconfig"; path = "Target Support Files/Pods-MyHome/Pods-MyHome.debug.xcconfig"; sourceTree = "<group>"; };
 		F079B1C94B5C784B7B50FD88 /* Pods-MyHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHome.release.xcconfig"; path = "Target Support Files/Pods-MyHome/Pods-MyHome.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		2D49BC262441991900AE736F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2D7CE2142442302300E5C645 /* Guest.swift */,
 				2D49BC382441E5BF00AE736F /* HomeNavigationController.swift */,
 				2D49BC2A24419B9F00AE736F /* ScheduleGuestArrivalViewController.swift */,
 				2D49BC2E2441C98D00AE736F /* DashboardViewController.swift */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D49BC05244186C700AE736F /* ViewController.swift in Sources */,
+				2D7CE2152442302300E5C645 /* Guest.swift in Sources */,
 				2D49BC01244186C700AE736F /* AppDelegate.swift in Sources */,
 				2D49BC0B244186C700AE736F /* MyHome.xcdatamodeld in Sources */,
 				2D49BC252441990C00AE736F /* RegisterViewController.swift in Sources */,

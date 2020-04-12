@@ -9,11 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-   override func viewDidLoad() {
+    @IBOutlet weak var emailOutlet: UITextField!
+    @IBOutlet weak var passwordOutlet: UITextField!
+    override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
+    @IBAction func loginAction(_ sender: UIButton) {
+    
+        let navVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navC")
+        self.present(navVC, animated: true, completion: nil)
+    
+    
+    }
     
 
 
