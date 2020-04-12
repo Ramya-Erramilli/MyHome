@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
 
         //Empty feilds validation
         if usernameOutlet.text!.isEmpty || passwordOutlet.text!.isEmpty{
-             self.present(CustomAlert.createAlert(title: "Error", descr: "One or more fields empty. Kindly check."), animated: true, completion: nil)
+            self.present(CustomAlert.createAlert(title: Constants.errorTitle, descr: Constants.emptyFieldDescr), animated: true, completion: nil)
         }
 
         // Adding user into Users db using Firebase
@@ -32,9 +32,9 @@ class RegisterViewController: UIViewController {
                 if let err = error{
                             // Display error alert
 //                    print(err.localizedDescription)
-                    self.present(CustomAlert.createAlert(title: "Error", descr: err.localizedDescription), animated: true, completion: nil)
+                    self.present(CustomAlert.createAlert(title: Constants.errorTitle, descr: err.localizedDescription), animated: true, completion: nil)
                 }else{
-                        //Succesful registration of users -- > Navigate to next VC
+                        //Succesful registration of users -- > Navigate to next VC using Storyboard
                     let navVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "navC")
                     self.show(navVC, sender: self)
                      navVC.present(CustomAlert.createAlert(title: "Success", descr: "You are succesfully registered."), animated: true, completion: nil)

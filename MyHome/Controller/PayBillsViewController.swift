@@ -1,20 +1,17 @@
 //
-//  HomeNavigationController.swift
+//  PayBillsViewController.swift
 //  MyHome
 //
-//  Created by Ramya Seshagiri on 11/04/20.
+//  Created by Ramya Seshagiri on 12/04/20.
 //  Copyright © 2020 Ramya Seshagiri. All rights reserved.
 //
 
 import UIKit
 
-class HomeNavigationController: UINavigationController {
+class PayBillsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem =  UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
-        
 
         // Do any additional setup after loading the view.
     }

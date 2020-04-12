@@ -6,6 +6,7 @@
 //  Copyright © 2020 Ramya Seshagiri. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 class DashboardViewController: UIViewController{
@@ -15,7 +16,7 @@ class DashboardViewController: UIViewController{
         
        
     }
-    
+    //Enables the user to share address over various platforms
     @IBAction func shareAddress(_ sender: UIButton) {
         
         let address = "304, Block - C, My Home Housing Society, Mumbai, Maharastra."
@@ -32,15 +33,14 @@ class DashboardViewController: UIViewController{
         self.present(activityViewController, animated: true, completion: nil)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
+        do {
+          try Auth.auth().signOut()
+            self.dismiss(animated: true, completion: nil)
+            
+        } catch let signOutError as NSError {
+            self.present(CustomAlert.createAlert(title: "Error", descr: signOutError.localizedDescription), animated: true, completion: nil)
+        }          
     }
-    */
-
+ 
 }

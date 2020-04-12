@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ViewController: UIViewController {
     @IBOutlet weak var emailOutlet: UITextField!
     @IBOutlet weak var passwordOutlet: UITextField!
@@ -18,13 +18,35 @@ class ViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: UIButton) {
     
-        let navVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navC")
-        self.present(navVC, animated: true, completion: nil)
-    
-    
+        if emailOutlet.text!.isEmpty || passwordOutlet.text!.isEmpty{
+            self.present(CustomAlert.createAlert(title: "Error", descr: Constants.emptyFieldDescr), animated: true, completion: nil)
+        }
+        else if let email = emailOutlet.text, let password = passwordOutlet.text{ // checking for nil or invalid
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                // guard let self = self else { return } // to avoid retain cycle
+                
+                if let err = error{
+                    // Display error
+//                    print(err.localizedDescription)
+                    self.present(CustomAlert.createAlert(title: "Error", descr: err.localizedDescription), animated: true, completion: nil)
+                    
+                }else{
+                    //Succesful registration of users -- > Navigate to next VC using Segue
+                    self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
+                    
+                }
+                
+            }
+        }       
     }
     
-
-
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == Constants.loginSegue{
+            return false
+        }
+        return true
+    }
+    
+   
 }
 
