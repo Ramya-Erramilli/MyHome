@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0499852443772000C2F193 /* GetHelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0499842443772000C2F193 /* GetHelpTableViewController.swift */; };
+		2D04998724437E3F00C2F193 /* GetHelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D04998624437E3F00C2F193 /* GetHelpTableViewCell.swift */; };
+		2D1CECC224438053008F3AD5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CECC124438053008F3AD5 /* Helper.swift */; };
+		2D1CECC424438986008F3AD5 /* HelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CECC324438986008F3AD5 /* HelperViewController.swift */; };
 		2D49BC01244186C700AE736F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D49BC00244186C700AE736F /* AppDelegate.swift */; };
 		2D49BC03244186C700AE736F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D49BC02244186C700AE736F /* SceneDelegate.swift */; };
 		2D49BC05244186C700AE736F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D49BC04244186C700AE736F /* ViewController.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D0499842443772000C2F193 /* GetHelpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetHelpTableViewController.swift; path = MyHome/Controller/GetHelpTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		2D04998624437E3F00C2F193 /* GetHelpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelpTableViewCell.swift; sourceTree = "<group>"; };
+		2D1CECC124438053008F3AD5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		2D1CECC324438986008F3AD5 /* HelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelperViewController.swift; path = MyHome/Controller/HelperViewController.swift; sourceTree = SOURCE_ROOT; };
 		2D49BBFD244186C700AE736F /* MyHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D49BC00244186C700AE736F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D49BC02244186C700AE736F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				2D7CE2142442302300E5C645 /* Guest.swift */,
+				2D0499842443772000C2F193 /* GetHelpTableViewController.swift */,
+				2D1CECC324438986008F3AD5 /* HelperViewController.swift */,
+				2D1CECC124438053008F3AD5 /* Helper.swift */,
+				2D04998624437E3F00C2F193 /* GetHelpTableViewCell.swift */,
 				2D49BC382441E5BF00AE736F /* HomeNavigationController.swift */,
 				2DEB860E24434699006E8676 /* PayBillsViewController.swift */,
 				2D49BC2A24419B9F00AE736F /* ScheduleGuestArrivalViewController.swift */,
@@ -265,17 +277,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D49BC05244186C700AE736F /* ViewController.swift in Sources */,
+				2D1CECC424438986008F3AD5 /* HelperViewController.swift in Sources */,
 				2D7CE2152442302300E5C645 /* Guest.swift in Sources */,
 				2D49BC01244186C700AE736F /* AppDelegate.swift in Sources */,
 				2D49BC0B244186C700AE736F /* MyHome.xcdatamodeld in Sources */,
 				2D49BC252441990C00AE736F /* RegisterViewController.swift in Sources */,
 				2D49BC392441E5BF00AE736F /* HomeNavigationController.swift in Sources */,
+				2D0499852443772000C2F193 /* GetHelpTableViewController.swift in Sources */,
+				2D1CECC224438053008F3AD5 /* Helper.swift in Sources */,
 				2DEB860F24434699006E8676 /* PayBillsViewController.swift in Sources */,
 				2D5D95C2244354610007D9B2 /* Constants.swift in Sources */,
 				2D49BC23244197B700AE736F /* Utilities.swift in Sources */,
 				2D49BC2B24419B9F00AE736F /* ScheduleGuestArrivalViewController.swift in Sources */,
 				2D49BC03244186C700AE736F /* SceneDelegate.swift in Sources */,
 				2D49BC2F2441C98D00AE736F /* DashboardViewController.swift in Sources */,
+				2D04998724437E3F00C2F193 /* GetHelpTableViewCell.swift in Sources */,
 				2D49BC372441E0A300AE736F /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
