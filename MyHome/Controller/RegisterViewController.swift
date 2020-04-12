@@ -39,6 +39,8 @@ class RegisterViewController: UIViewController {
                     self.show(navVC, sender: self)
                      navVC.present(CustomAlert.createAlert(title: "Success", descr: "You are succesfully registered."), animated: true, completion: nil)
 //                     print(authResult)
+                    
+                    
                 }
             
             }

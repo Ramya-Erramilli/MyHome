@@ -13,11 +13,26 @@ class DashboardViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view.
+       
     }
     
+    @IBAction func shareAddress(_ sender: UIButton) {
+        
+        let address = "304, Block - C, My Home Housing Society, Mumbai, Maharastra."
+ 
+        let activityViewController : UIActivityViewController = UIActivityViewController(
+            activityItems: [address], applicationActivities: nil)
 
+        
+        activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+//        activityViewController.popoverPresentationController?.sourceView = self.view
+
+        activityViewController.isModalInPresentation = true
+
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
