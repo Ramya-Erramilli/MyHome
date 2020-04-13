@@ -6,13 +6,11 @@
 //  Copyright © 2020 Ramya Seshagiri. All rights reserved.
 //
 
-struct Constants{
+struct Constants{ // File to store constants
     static let loginSegue = "loginSegue"
     static let errorTitle = "Error"
     static let emptyFieldDescr = "One or more fields empty. Kindly check."
-    
-    
-    
+
     struct Firestore{
         static let helperDBname = "HelpPhoneNumber"
         static let helpername = "Name"

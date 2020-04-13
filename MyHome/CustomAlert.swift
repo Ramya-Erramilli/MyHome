@@ -14,7 +14,7 @@ class CustomAlert{
     
     static func createAlert(title:String,descr:String)-> UIAlertController{
         
-        var alert = UIAlertController(title: title, message: """
+        let alert = UIAlertController(title: title, message: """
 
             \(descr)
             

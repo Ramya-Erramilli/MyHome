@@ -39,7 +39,7 @@ class ScheduleGuestArrivalViewController: UIViewController{
         }
  
         else if let guestName = guestNameOutlet.text, let phoneNumber = phoneNumberOutlet.text{
-            let guestDetails = GuestDetails().addGuest(name: guestName, phoneNumber: phoneNumber, expectedTime: time, numberOfGuests: stepperCountLabel.text!)
+//            let guestDetails = GuestDetails().addGuest(name: guestName, phoneNumber: phoneNumber, expectedTime: time, numberOfGuests: stepperCountLabel.text!)
             
             db.collection(Constants.Firestore.guestsDBName).addDocument(data: [
             
@@ -63,17 +63,20 @@ class ScheduleGuestArrivalViewController: UIViewController{
                 Total number of guests are \(numberOfGuests).
                 
                 """), animated: true) {
-                    
-                    self.guestNameOutlet.text = ""
-                    self.phoneNumberOutlet.text = ""
-                    self.stepperCountLabel.text = "1"
-                    self.datePickerOutlet.date = Date()
-                    self.guestNameOutlet.becomeFirstResponder()
-                    self.view.touchesBegan(.init(), with: .none)
-                    
+                    self.updateUI()
             }
             
         }
+        
+    }
+    
+    func updateUI(){
+        self.guestNameOutlet.text = ""
+        self.phoneNumberOutlet.text = ""
+        self.stepperCountLabel.text = "1"
+        self.datePickerOutlet.date = Date()
+        self.guestNameOutlet.becomeFirstResponder()
+        self.view.touchesBegan(.init(), with: .none)
         
     }
 

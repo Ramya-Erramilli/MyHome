@@ -35,7 +35,7 @@ class GetHelpTableViewController: UITableViewController {
                             let data = doc.data() //get data from doc
                             if let helpername = data[Constants.Firestore.helpername] as? String, let helperWork = data[Constants.Firestore.helperWork] as? String, let helperPhoneNumber = data[Constants.Firestore.helperPhoneNumber] { // Check for optionals
                                 
-                                var helper = Helper(name: helpername, work: helperWork, phoneNumber: helperPhoneNumber as! String)
+                                let helper = Helper(name: helpername, work: helperWork, phoneNumber: helperPhoneNumber as! String)
                                 self.helpers.append(helper) // Add the helper to lost of helpers
                                 
                                 DispatchQueue.main.async {
@@ -63,26 +63,29 @@ class GetHelpTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GetHelpTableViewCell
-        
+        let helper = helpers[indexPath.row]
         cell.imageViewOutlet.image = UIImage(named: "friends_icon")
-        cell.nameLabel.text = helpers[indexPath.row].name
-        cell.workLabel.text = helpers[indexPath.row].work
+        cell.nameLabel.text = helper.name
+        cell.workLabel.text = helper.work
+        cell.phoneNumberOutlet.text = helper.phoneNumber
+        cell.phoneNumberOutlet.sizeToFit()
         cell.workLabel.sizeToFit()
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelperDetails") as! HelperViewController
+  
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelperDetails") as! HelperViewController
 
         popOverVC.modalPresentationStyle = .popover
-        let popover: UIPopoverPresentationController = popOverVC.popoverPresentationController!
+//        let popover: UIPopoverPresentationController = popOverVC.popoverPresentationController!
 
         self.present(popOverVC, animated: true, completion: nil)
 
         popOverVC.nameLabel.text = helpers[indexPath.row].name
         popOverVC.phNo.text = helpers[indexPath.row].phoneNumber
         popOverVC.workLabel.text = helpers[indexPath.row].work
-        
+
         popOverVC.nameLabel.sizeToFit()
         popOverVC.workLabel.sizeToFit()
         popOverVC.phNo.sizeToFit()

@@ -31,7 +31,8 @@ class HelperViewController: UIViewController, UIPopoverPresentationControllerDel
         @objc
         func tapFunction(sender:UITapGestureRecognizer) {
             
-            // On tapping the phone number label,
+            // On tapping the phone number label, enabled making a call -- Works only on real mobile, not simulator
+            
 //             if let url = URL(string: "TEL://123456789") {
 //                 UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
 ////                UIApplication.shared.openURL(url)
@@ -39,7 +40,7 @@ class HelperViewController: UIViewController, UIPopoverPresentationControllerDel
 //             }else{
 //                print("here")
 //            }
-
+            //Instead presenting an Alert
             self.present(CustomAlert.createAlert(title: "Call", descr: "Do you want to make a call?"), animated: true, completion: nil)
         }
         

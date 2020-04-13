@@ -6,8 +6,6 @@
 //  Copyright © 2020 Ramya Seshagiri. All rights reserved.
 //
 
-import Foundation
-
 class GuestDetails {
     
     var name: String?

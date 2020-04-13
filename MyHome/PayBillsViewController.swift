@@ -9,9 +9,10 @@
 import UIKit
 
 class PayBillsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
+    @IBOutlet weak var billType: UIPickerView!
     var billTypes = ["Rent","Electricity","Maintenance","Water Bill"]
-    
+    var billAmounts = [25000,1200,3000,500]
+    var row = 0
     
     //Picker view data source methods
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -25,26 +26,27 @@ class PayBillsViewController: UIViewController, UIPickerViewDataSource, UIPicker
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return billTypes[row]
     }
-    
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        print(billTypes[row])
-//    }
-//
 
-    @IBOutlet weak var billType: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         billType.dataSource = self
         billType.delegate = self
-        // Do any additional setup after loading the view.
+
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.row = row
+        
     }
     
     @IBAction func payAction(_ sender: UIButton) {
         
-        // Ideally the page should be redirected to a payment gateway. Showing an alert instead.
+        // Ideally the page should be redirected to a payment gateway,Showing an alert instead.
         
-        let alert = CustomAlert.createAlert(title: "Pay Bill", descr: "Do you want to proceed to payment?")
+        let alert = CustomAlert.createAlert(title: "Pay Bill", descr: """
+            Your \(billTypes[self.row]) bill is  Rs. \(billAmounts[self.row])/-.
+            Do you want to proceed to payment?
+            """)
         self.present(alert, animated: true, completion: nil)
         
         

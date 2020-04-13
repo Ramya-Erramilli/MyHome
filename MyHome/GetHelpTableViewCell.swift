@@ -12,6 +12,8 @@ class GetHelpTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var workLabel: UILabel!
     @IBOutlet weak var imageViewOutlet: UIImageView!
+    @IBOutlet weak var phoneNumberOutlet: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
