@@ -21,7 +21,8 @@ class HelperViewController: UIViewController, UIPopoverPresentationControllerDel
         workLabel.text = ""
         phNo.text = ""
         
-
+        // Gesutre Recognition enabled
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
         phNo.isUserInteractionEnabled = true
         phNo.addGestureRecognizer(tap)
@@ -42,19 +43,5 @@ class HelperViewController: UIViewController, UIPopoverPresentationControllerDel
             self.present(CustomAlert.createAlert(title: "Call", descr: "Do you want to make a call?"), animated: true, completion: nil)
         }
         
-        // Do any additional setup after loading the view.
-    
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

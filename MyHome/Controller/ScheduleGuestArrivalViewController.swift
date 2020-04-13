@@ -20,11 +20,7 @@ class ScheduleGuestArrivalViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         datePickerOutlet.minimumDate = Date()
-        
-//        print(Date())
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func stepperAction(_ sender: UIStepper) {

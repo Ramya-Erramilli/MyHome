@@ -16,17 +16,6 @@ class GetHelpTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.rowHeight = UITableView.automaticDimension
-//        tableView.estimatedRowHeight = 600
-
-//        tableView.dataSource = self
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,13 +30,13 @@ class GetHelpTableViewController: UITableViewController {
             }else{
                 //Retriving Helper data from Firestore
 //                var helper = querySnapshot?.documents[0].data()[Constants.Firestore.helpername]
-                    if let snapshotDocuments = querySnapshot?.documents {
-                        for doc in snapshotDocuments {
-                            let data = doc.data()
-                            if let helpername = data[Constants.Firestore.helpername] as? String, let helperWork = data[Constants.Firestore.helperWork] as? String, let helperPhoneNumber = data[Constants.Firestore.helperPhoneNumber] {
+                    if let snapshotDocuments = querySnapshot?.documents { // get the qiery snapshot
+                        for doc in snapshotDocuments { // Get doc from snapshot
+                            let data = doc.data() //get data from doc
+                            if let helpername = data[Constants.Firestore.helpername] as? String, let helperWork = data[Constants.Firestore.helperWork] as? String, let helperPhoneNumber = data[Constants.Firestore.helperPhoneNumber] { // Check for optionals
                                 
                                 var helper = Helper(name: helpername, work: helperWork, phoneNumber: helperPhoneNumber as! String)
-                                self.helpers.append(helper)
+                                self.helpers.append(helper) // Add the helper to lost of helpers
                                 
                                 DispatchQueue.main.async {
                                     self.tableView.reloadData()
@@ -81,21 +70,15 @@ class GetHelpTableViewController: UITableViewController {
         cell.workLabel.sizeToFit()
         return cell
     }
-    
-    
-//    var phNo:String?
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-        
         var popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HelperDetails") as! HelperViewController
-//        tableView.reloadData()
+
         popOverVC.modalPresentationStyle = .popover
         let popover: UIPopoverPresentationController = popOverVC.popoverPresentationController!
-//        popover.barButtonItem = sender
+
         self.present(popOverVC, animated: true, completion: nil)
-    
-//        phNo = helpers[indexPath.row].phoneNumber
+
         popOverVC.nameLabel.text = helpers[indexPath.row].name
         popOverVC.phNo.text = helpers[indexPath.row].phoneNumber
         popOverVC.workLabel.text = helpers[indexPath.row].work
@@ -103,11 +86,6 @@ class GetHelpTableViewController: UITableViewController {
         popOverVC.nameLabel.sizeToFit()
         popOverVC.workLabel.sizeToFit()
         popOverVC.phNo.sizeToFit()
-
-        
-        
     }
-    
-
 }
    

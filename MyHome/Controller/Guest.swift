@@ -21,7 +21,7 @@ class GuestDetails {
         self.phoneNumber = phoneNumber
         self.numberOfGuests = numberOfGuests
         
-        print("Added")
+//        print("Added")
     }
     
     func returnGuestDetails(){

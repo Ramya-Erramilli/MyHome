@@ -27,7 +27,7 @@ class CustomAlert{
         alert.setBackgroudColor(color: UIColor.black)
         
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler:nil))
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler:nil))
         return alert
         
     }

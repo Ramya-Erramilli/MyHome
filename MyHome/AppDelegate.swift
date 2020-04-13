@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Firebase Configuration
         FirebaseApp.configure()
         let db = Firestore.firestore()
-        print(db)
+//        print(db)
         
         // IQ keyboard Manager
         IQKeyboardManager.shared.enable = true
