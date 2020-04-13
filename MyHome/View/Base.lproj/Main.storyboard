@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zFa-PV-GTg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -30,9 +30,6 @@
                                     <segue destination="aFh-bk-Eog" kind="show" id="qZq-Dl-spV"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home1" translatesAutoresizingMaskIntoConstraints="NO" id="PES-zg-dda">
-                                <rect key="frame" x="143" y="147" width="128" height="128"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qT-Nr-5zV" userLabel="EmailView">
                                 <rect key="frame" x="0.0" y="329" width="414" height="177"/>
                                 <subviews>
@@ -99,19 +96,48 @@
                                     <constraint firstAttribute="bottom" secondItem="zci-ZX-Zzq" secondAttribute="bottom" constant="20" id="ulL-q1-TBw"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3La-Je-197">
+                                <rect key="frame" x="74" y="96" width="266" height="257"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home1" translatesAutoresizingMaskIntoConstraints="NO" id="PES-zg-dda">
+                                        <rect key="frame" x="75" y="20" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQl-KQ-yOa" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                        <rect key="frame" x="39" y="164" width="190" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <color key="NSColor" name="BrandBlue"/>
+                                                    <font key="NSFont" size="30" name="Zapfino"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <real key="NSStrokeWidth" value="3"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="centerText" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandLightPurple"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightPurple"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3La-Je-197" secondAttribute="bottom" constant="509" id="5XA-CL-0lW"/>
+                            <constraint firstItem="8qT-Nr-5zV" firstAttribute="top" secondItem="3La-Je-197" secondAttribute="bottom" constant="-24" id="6C9-74-X8Q"/>
+                            <constraint firstItem="3La-Je-197" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="6Eh-1j-JBY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kp6-3Y-O8l" secondAttribute="trailing" constant="68" id="8Wg-zj-ak9"/>
                             <constraint firstItem="8qT-Nr-5zV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BAU-oO-ZR5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kp6-3Y-O8l" secondAttribute="bottom" constant="186" id="N3k-mI-9yy"/>
+                            <constraint firstItem="3La-Je-197" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Vg4-2B-fMQ"/>
                             <constraint firstItem="uZ0-WI-68j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WWt-vk-MUE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PES-zg-dda" secondAttribute="bottom" constant="587" id="YQH-gd-RTS"/>
                             <constraint firstItem="uZ0-WI-68j" firstAttribute="top" secondItem="8qT-Nr-5zV" secondAttribute="bottom" constant="-75" id="ZhK-js-dre"/>
-                            <constraint firstItem="PES-zg-dda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="dtl-yw-P5l"/>
-                            <constraint firstItem="8qT-Nr-5zV" firstAttribute="top" secondItem="PES-zg-dda" secondAttribute="bottom" constant="54" id="flA-9f-xwt"/>
                             <constraint firstItem="uZ0-WI-68j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hWG-nA-XF9"/>
-                            <constraint firstItem="PES-zg-dda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="muu-je-pnb"/>
+                            <constraint firstItem="3La-Je-197" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kxI-kJ-mmN"/>
                             <constraint firstItem="8qT-Nr-5zV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vaN-fe-TnA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -119,6 +145,7 @@
                     <navigationItem key="navigationItem" id="vV9-je-aqF"/>
                     <connections>
                         <outlet property="emailOutlet" destination="GZe-XD-hU8" id="Kr8-0s-EHI"/>
+                        <outlet property="nameLabel" destination="rQl-KQ-yOa" id="5qY-qx-rCs"/>
                         <outlet property="passwordOutlet" destination="Zlr-Jk-tWL" id="qTh-bB-VB3"/>
                     </connections>
                 </viewController>

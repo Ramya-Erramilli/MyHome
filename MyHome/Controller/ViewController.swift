@@ -8,11 +8,15 @@
 
 import UIKit
 import Firebase
+import CLTypingLabel
 class ViewController: UIViewController {
+    @IBOutlet weak var nameLabel: CLTypingLabel!
     @IBOutlet weak var emailOutlet: UITextField!
     @IBOutlet weak var passwordOutlet: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = "My Home"
 
     }
     
