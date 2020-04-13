@@ -22,7 +22,6 @@ class HelperViewController: UIViewController, UIPopoverPresentationControllerDel
         phNo.text = ""
         
         // Gesutre Recognition enabled
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
         phNo.isUserInteractionEnabled = true
         phNo.addGestureRecognizer(tap)
