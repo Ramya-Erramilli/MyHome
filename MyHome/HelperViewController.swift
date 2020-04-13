@@ -40,8 +40,18 @@ class HelperViewController: UIViewController, UIPopoverPresentationControllerDel
 //                print("here")
 //            }
             //Instead presenting an Alert
-            self.present(CustomAlert.createAlert(title: "Call", descr: "Do you want to make a call?"), animated: true, completion: nil)
+            let alert = UIAlertController(title: "Call", message: "Do you want to make a call?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alert) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (alert) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
         }
+    
+
         
 
 }
