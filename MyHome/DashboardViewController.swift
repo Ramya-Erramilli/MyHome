@@ -15,10 +15,7 @@ class DashboardViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = """
-                \((Auth.auth().currentUser?.email)!)
-                            (me)
-        """
+        nameLabel.text = "\((Auth.auth().currentUser?.email)!) (me)"
     }
     //Enables the user to share address over various platforms
     @IBAction func shareAddress(_ sender: UIButton) {

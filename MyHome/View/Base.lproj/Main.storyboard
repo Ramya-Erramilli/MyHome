@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dnp-kG-DEh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -16,15 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp6-3Y-O8l">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kp6-3Y-O8l">
                                 <rect key="frame" x="60" y="628" width="286" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="BlD-IB-Uiw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="286" id="LKg-ug-enu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="No account? Register">
-                                    <color key="titleColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="No account? Register">
+                                            <attributes>
+                                                <color key="NSColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="20"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="aFh-bk-Eog" kind="show" id="qZq-Dl-spV"/>
@@ -104,12 +111,12 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQl-KQ-yOa" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                        <rect key="frame" x="39" y="164" width="190" height="56"/>
+                                        <rect key="frame" x="13" y="168" width="241" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Label">
                                                 <attributes>
-                                                    <color key="NSColor" name="BrandBlue"/>
+                                                    <color key="NSColor" red="0.152905494" green="0.15296348930000001" blue="0.14465981720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="30" name="Zapfino"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     <real key="NSStrokeWidth" value="3"/>
@@ -162,22 +169,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="eO5-Pi-cqo">
-                                <rect key="frame" x="22" y="75" width="370" height="665"/>
+                                <rect key="frame" x="14" y="75" width="386" height="665"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="otR-al-gsr" userLabel="Top Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="110"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1jP-bS-SPd">
-                                                <rect key="frame" x="0.0" y="0.0" width="175" height="110"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="110"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jIk-vr-Gzp">
-                                                        <rect key="frame" x="0.0" y="1.5" width="175" height="47.5"/>
+                                                        <rect key="frame" x="0.0" y="1.5" width="183" height="47.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="x0q-do-Fu6"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9c-eK-0Ng" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                                        <rect key="frame" x="0.0" y="60" width="175" height="50"/>
+                                                        <rect key="frame" x="0.0" y="60" width="183" height="50"/>
                                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                                         <color key="textColor" name="BrandBlue"/>
                                                         <nil key="highlightedColor"/>
@@ -185,10 +192,10 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aml-9V-Q49">
-                                                <rect key="frame" x="195" y="0.0" width="175" height="110"/>
+                                                <rect key="frame" x="203" y="0.0" width="183" height="110"/>
                                                 <color key="backgroundColor" name="BrandBlue"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
-                                                <state key="normal" title="Share Address 🏘  ">
+                                                <state key="normal" title=" Share Address 🏘  ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -203,7 +210,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-0Z-8Tn">
-                                        <rect key="frame" x="0.0" y="185" width="370" height="110"/>
+                                        <rect key="frame" x="0.0" y="185" width="386" height="110"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Schedule Guest arrival 📆">
@@ -219,7 +226,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-I8-j57">
-                                        <rect key="frame" x="0.0" y="370" width="370" height="110"/>
+                                        <rect key="frame" x="0.0" y="370" width="386" height="110"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Get Help ☎️">
@@ -235,7 +242,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXS-Yi-nzh">
-                                        <rect key="frame" x="0.0" y="555" width="370" height="110"/>
+                                        <rect key="frame" x="0.0" y="555" width="386" height="110"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Pay Bills 💳">
@@ -683,9 +690,6 @@
         <image name="friends_icon" width="17" height="17"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="textfield" width="298" height="93"/>
-        <namedColor name="BrandBlue">
-            <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
