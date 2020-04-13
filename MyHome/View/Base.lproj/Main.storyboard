@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zFa-PV-GTg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -135,10 +135,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="eO5-Pi-cqo">
-                                <rect key="frame" x="-3" y="95" width="420" height="625"/>
+                                <rect key="frame" x="7" y="95" width="400" height="625"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="otR-al-gsr" userLabel="Top Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="420" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="otR-al-gsr" userLabel="Top Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jIk-vr-Gzp">
                                                 <rect key="frame" x="0.0" y="1.5" width="190" height="97.5"/>
@@ -147,7 +147,7 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aml-9V-Q49">
-                                                <rect key="frame" x="230" y="0.0" width="190" height="100"/>
+                                                <rect key="frame" x="210" y="0.0" width="190" height="100"/>
                                                 <color key="backgroundColor" name="BrandBlue"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <state key="normal" title="  Share Address 🏘  ">
@@ -160,9 +160,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-0Z-8Tn">
-                                        <rect key="frame" x="0.0" y="175" width="420" height="100"/>
+                                        <rect key="frame" x="0.0" y="175" width="400" height="100"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Schedule Guest arrival 📆">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -171,9 +171,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-I8-j57">
-                                        <rect key="frame" x="0.0" y="350" width="420" height="100"/>
+                                        <rect key="frame" x="0.0" y="350" width="400" height="100"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Get Help ☎️">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -182,9 +182,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXS-Yi-nzh">
-                                        <rect key="frame" x="0.0" y="525" width="420" height="100"/>
+                                        <rect key="frame" x="0.0" y="525" width="400" height="100"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Pay Bills 💳">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -281,7 +281,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="friends_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mx8-F5-LZc">
-                                <rect key="frame" x="135" y="117" width="144" height="155"/>
+                                <rect key="frame" x="157" y="117" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="XZk-vD-k9g">
@@ -300,11 +300,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gf-YS-PkC">
-                                        <rect key="frame" x="1.5" y="236" width="91.5" height="48"/>
+                                        <rect key="frame" x="0.0" y="236" width="94" height="48"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Label">
                                                 <attributes>
-                                                    <font key="NSFont" size="40" name=".SFNS-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="40"/>
                                                     <integer key="NSUnderline" value="1"/>
                                                 </attributes>
                                             </fragment>
@@ -314,7 +314,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
                             <constraint firstItem="XZk-vD-k9g" firstAttribute="centerY" secondItem="rHc-vJ-wyI" secondAttribute="centerY" id="LFJ-ec-KOI"/>
                             <constraint firstItem="XZk-vD-k9g" firstAttribute="centerX" secondItem="rHc-vJ-wyI" secondAttribute="centerX" id="fyo-s2-Bnm"/>
@@ -339,15 +339,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select the type of bill to be paid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-u2-gdV">
-                                <rect key="frame" x="48" y="184" width="243" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select the type of bill to be paid:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-u2-gdV">
+                                <rect key="frame" x="48" y="131" width="302" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-gW-zIy">
-                                <rect key="frame" x="0.0" y="226" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="235" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quP-pg-AOc">
@@ -355,16 +355,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="payAction:" destination="zFa-PV-GTg" eventType="touchUpInside" id="6Tq-jn-dA9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <viewLayoutGuide key="safeArea" id="YK6-wQ-Jy4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pay Bills" id="YTo-Lc-yvC"/>
+                    <connections>
+                        <outlet property="billType" destination="Xco-gW-zIy" id="jQz-mT-hKD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gqn-4K-FQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6743" y="452"/>
+            <point key="canvasLocation" x="6742.0289855072469" y="451.33928571428567"/>
         </scene>
         <!--Schedule Guests-->
         <scene sceneID="Uqm-WX-1pb">
@@ -547,7 +553,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="BrandLightBlue"/>
+                        <color key="backgroundColor" name="BrandLightPurple"/>
                         <constraints>
                             <constraint firstItem="lg1-Qn-fIX" firstAttribute="top" secondItem="dsz-Vo-8RS" secondAttribute="bottom" constant="-100" id="ZY0-Dx-5wF"/>
                             <constraint firstItem="dsz-Vo-8RS" firstAttribute="trailing" secondItem="XES-Hj-qyH" secondAttribute="trailing" id="dw8-2Y-7jb"/>

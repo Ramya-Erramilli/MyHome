@@ -14,15 +14,20 @@ class CustomAlert{
     
     static func createAlert(title:String,descr:String)-> UIAlertController{
         
-        var alert = UIAlertController(title: title, message: descr, preferredStyle: .alert)
+        var alert = UIAlertController(title: title, message: """
+
+            \(descr)
+            
+            """, preferredStyle: .alert)
     
         alert.setTitle(font: UIFont.boldSystemFont(ofSize: 26), color: UIColor.white)
         // Change font and color of message
-        alert.setMessage(font: UIFont(name: "Helvetica", size: 18), color: UIColor.cyan)
+        alert.setMessage(font: UIFont(name: "Helvetica", size: 18), color: UIColor.systemBackground)
         // Change background color of UIAlertController
         alert.setBackgroudColor(color: UIColor.black)
         
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler:nil))
         return alert
         
     }

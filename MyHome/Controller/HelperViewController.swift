@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HelperViewController: UIViewController {
+class HelperViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var workLabel: UILabel!
@@ -29,6 +29,8 @@ class HelperViewController: UIViewController {
 
         @objc
         func tapFunction(sender:UITapGestureRecognizer) {
+            
+            // On tapping the phone number label,
 //             if let url = URL(string: "TEL://123456789") {
 //                 UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
 ////                UIApplication.shared.openURL(url)
@@ -37,7 +39,7 @@ class HelperViewController: UIViewController {
 //                print("here")
 //            }
 
-            print("tapped")
+            self.present(CustomAlert.createAlert(title: "Call", descr: "Do you want to make a call?"), animated: true, completion: nil)
         }
         
         // Do any additional setup after loading the view.
